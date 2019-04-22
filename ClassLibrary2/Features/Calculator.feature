@@ -4,15 +4,31 @@
 	I want to be told the sum of two numbers
 
 @mytag
-Scenario: Add 50 to 70
-	Given I have entered 50 into the calculator
-	And I have also entered 70 into the calculator
+Scenario Outline: Add numbers
+	Given I have entered <firstValue> into the calculator
+	And I have also entered <secondValue> into the calculator
 	When I press add
-	Then the result should be 120 on the screen
+	Then the result should be <result> on the screen
+
+	Examples: 
+		| firstValue | secondValue | result |
+		| 0          | 10          | 10     |
+		| 20         | 0           | 20     |
+		| -10        | 20          | 10     |
+		| 0.5        | -1          | -0.5   |
 
 @mytag
-Scenario: Add 70 to 70
-	Given I have entered 70 into the calculator
-	And I have also entered 70 into the calculator
-	When I press add
-	Then the result should be 120 on the screen
+Scenario Outline: Multiply numbers
+	Given I have entered <firstValue> into the calculator
+	And I have also entered <secondValue> into the calculator
+	When I press mult
+	Then the result should be <result> on the screen
+
+	Examples: 
+		| firstValue | secondValue | result |
+		| 0          | 10          | 0      |
+		| 20         | 0           | 0      |
+		| -10        | 20          | -200   |
+		| 0.5        | -2          | -1     |
+
+

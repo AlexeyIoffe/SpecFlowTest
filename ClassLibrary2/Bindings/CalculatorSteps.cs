@@ -29,6 +29,12 @@ namespace ClassLibrary2
             result = first + second;
         }
 
+        [When(@"I press mult")]
+        public void WhenIPressMult()
+        {
+            result = first * second;
+        }
+
         [Then(@"the result should be (.*) on the screen")]
         public void ThenTheResultShouldBeOnTheScreen(int p0)
         {
