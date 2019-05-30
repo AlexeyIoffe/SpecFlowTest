@@ -3,7 +3,6 @@
 	As a math idiot
 	I want to be told the sum of two numbers
 
-@mytag
 Scenario Outline: Add numbers
 	Given I have entered <firstValue> into the calculator
 	And I have also entered <secondValue> into the calculator
