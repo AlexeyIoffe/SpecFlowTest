@@ -76,7 +76,7 @@ namespace ClassLibrary2.Features
         [NUnit.Framework.TestCaseAttribute("0", "10", "10", null)]
         [NUnit.Framework.TestCaseAttribute("20", "0", "20", null)]
         [NUnit.Framework.TestCaseAttribute("-10", "20", "10", null)]
-        [NUnit.Framework.TestCaseAttribute("0.5", "-1", "-0.5", null)]
+        [NUnit.Framework.TestCaseAttribute("1", "-1", "0", null)]
         public virtual void AddNumbers(string firstValue, string secondValue, string result, string[] exampleTags)
         {
             string[] @__tags = new string[] {
@@ -107,7 +107,7 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestCaseAttribute("0", "10", "0", null)]
         [NUnit.Framework.TestCaseAttribute("20", "0", "0", null)]
         [NUnit.Framework.TestCaseAttribute("-10", "20", "-200", null)]
-        [NUnit.Framework.TestCaseAttribute("0.5", "-2", "-1", null)]
+        [NUnit.Framework.TestCaseAttribute("1", "-2", "-2", null)]
         public virtual void MultiplyNumbers(string firstValue, string secondValue, string result, string[] exampleTags)
         {
             string[] @__tags = new string[] {
@@ -135,4 +135,3 @@ this.ScenarioInitialize(scenarioInfo);
 }
 #pragma warning restore
 #endregion
-

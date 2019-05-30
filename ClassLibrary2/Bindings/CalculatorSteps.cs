@@ -2,7 +2,7 @@
 using System;
 using TechTalk.SpecFlow;
 
-namespace ClassLibrary2
+namespace SpecFlowTest
 {
     [Binding]
     public class SpecFlowFeature1Steps

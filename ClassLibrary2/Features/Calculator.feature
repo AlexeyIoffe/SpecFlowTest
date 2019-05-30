@@ -15,7 +15,7 @@ Scenario Outline: Add numbers
 		| 0          | 10          | 10     |
 		| 20         | 0           | 20     |
 		| -10        | 20          | 10     |
-		| 0.5        | -1          | -0.5   |
+		| 1          | -1          | 0   |
 
 @mytag
 Scenario Outline: Multiply numbers
@@ -29,6 +29,6 @@ Scenario Outline: Multiply numbers
 		| 0          | 10          | 0      |
 		| 20         | 0           | 0      |
 		| -10        | 20          | -200   |
-		| 0.5        | -2          | -1     |
+		| 1          | -2          | -2     |
 
 
